@@ -122,6 +122,11 @@ if(this.video.paused){
 
 })
 
+this.video.addEventListener("ended", () => {
+  playVideo.classList.remove("hidden");
+  pause.classList.add("hidden");
+});
+
 
 //////////////////////////////////////////////////
 
